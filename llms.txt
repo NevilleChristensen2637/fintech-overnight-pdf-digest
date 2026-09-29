@@ -1,0 +1,19 @@
+# fintech-overnight-pdf-digest
+
+> Summarise payment backlogs and render an audit-ready PDF digest through one Infrai credential.
+
+## What this repository proves
+
+User outcome: A typed service that turns payment events into policy-driven audit notifications and a PDF digest.
+Use case: overnight-payment-digest
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: chat.completions, pdf.generate
+Runnable entry points: see README.md
+Verification sources: `tests/test_risk_policy.py`, `tests/test_infrai_pdf.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

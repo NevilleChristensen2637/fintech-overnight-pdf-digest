@@ -1,0 +1,2 @@
+"""Overnight payment digest service."""
+

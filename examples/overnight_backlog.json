@@ -1,0 +1,26 @@
+{
+  "run_id": "night-2026-09-13",
+  "events": [
+    {
+      "event_id": "pay_1042",
+      "account_id": "merchant_88",
+      "occurred_at": "2026-09-12T23:41:00Z",
+      "amount": "12500.00",
+      "currency": "USD",
+      "status": "failed",
+      "risk_score": 62,
+      "note": "Issuer declined the capture."
+    },
+    {
+      "event_id": "pay_1043",
+      "account_id": "merchant_21",
+      "occurred_at": "2026-09-12T23:48:00Z",
+      "amount": "249.90",
+      "currency": "USD",
+      "status": "settled",
+      "risk_score": 18,
+      "note": "Settlement completed."
+    }
+  ]
+}
+

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fintech-overnight-pdf-digest"
+version = "0.1.0"
+description = "Summarise payment backlogs and render an audit-ready PDF digest through one Infrai credential."
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "httpx>=0.27,<1",
+  "openai>=1.50,<2",
+  "pydantic>=2.8,<3",
+  "uvicorn>=0.30,<1",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<9"]
+
+[project.scripts]
+overnight-digest = "fintech_digest.sample_run:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fintech_digest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
